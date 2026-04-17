@@ -1,0 +1,31 @@
+{
+  "name": "soil-detector",
+  "version": "1.0.0",
+  "description": "An AI-powered digital twin of soil that helps farmers decide what to grow, connect with others, rent equipment, and sell crops—all in one platform.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html style.css script.js manifest.webmanifest service-worker.js dist/ && cp -r assets dist/",
+    "sync": "npm run build && npx cap sync",
+    "android": "npm run sync && npx cap open android",
+    "ios": "npm run sync && npx cap open ios"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyavatiscs24-png/Soil-Detector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/satyavatiscs24-png/Soil-Detector/issues"
+  },
+  "homepage": "https://github.com/satyavatiscs24-png/Soil-Detector#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/ios": "^8.3.1"
+  }
+}

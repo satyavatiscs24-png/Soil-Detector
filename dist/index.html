@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <title>AgriTwin - Your Soil's Digital Intelligence</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Container -->
+    <div class="pages-container">
+        <!-- Page 1 -->
+        <div class="page page-1 active">
+            <div class="background-overlay"></div>
+            <img src="assets/farm-landscape.jpg" alt="Smart Agriculture" class="background-image">
+            
+            <div class="content-wrapper">
+                <!-- Circular Window showing Background Image -->
+                <div class="circular-window">
+                    <img src="assets/farm-landscape.jpg" alt="Farm View" class="window-image">
+                </div>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <h1 class="brand-title">AgriTwin</h1>
+                    <p class="brand-tagline">Your Soil's Digital Intelligence</p>
+                    <h2>Welcome to the Future of Agriculture</h2>
+                    <p class="description">Harness the power of AI and IoT to transform your farming experience</p>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="navigation-dots">
+                <button class="dot dot-1 active" data-page="1"></button>
+                <button class="dot dot-2" data-page="2"></button>
+                <button class="dot dot-3" data-page="3"></button>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page page-2">
+            <img src="assets/page2-smart-farming.jpg" alt="Smart Farming IoT" class="background-image">
+            <div class="page2-overlay"></div>
+            <div class="content-wrapper page2-wrapper">
+                <div class="page2-top-panel">
+                    <div class="page2-top-shade"></div>
+                </div>
+                <div class="page2-card">
+                    <h2>Grow Smarter with Data</h2>
+                    <p>
+                        "Technology in the soil today<br>
+                        ensures food on the table tomorrow"
+                    </p>
+                </div>
+            </div>
+            <div class="navigation-dots">
+                <button class="dot dot-1" data-page="1"></button>
+                <button class="dot dot-2 active" data-page="2"></button>
+                <button class="dot dot-3" data-page="3"></button>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page page-3">
+            <img src="assets/page3-marketplace.jpg" alt="Marketplace and Community" class="background-image">
+            <div class="page3-overlay"></div>
+            <div class="content-wrapper page3-wrapper">
+                <div class="page3-title-block">
+                    <h2>MARKETPLACE</h2>
+                    <span class="plus">+</span>
+                    <h3>COMMUNITY</h3>
+                </div>
+
+                <div class="page3-card">
+                    <p>A community that grows together,<br>thrives together.</p>
+                    <button class="get-started-btn" data-target-page="4">Get Started</button>
+                </div>
+            </div>
+            <div class="navigation-dots">
+                <button class="dot dot-1" data-page="1"></button>
+                <button class="dot dot-2" data-page="2"></button>
+                <button class="dot dot-3 active" data-page="3"></button>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page page-4">
+            <img src="assets/page4-auth-bg.jpeg" alt="Join Our Platform" class="background-image">
+            <div class="page4-overlay"></div>
+            <div class="content-wrapper page4-wrapper">
+                <div class="page4-auth-card" id="authCard">
+                    <h2>Join Our Platform</h2>
+
+                    <form id="signupForm" class="auth-form" novalidate>
+                        <label for="signupIdentifier">Email or Phone Number</label>
+                        <input id="signupIdentifier" type="text" placeholder="Enter your email or phone number" required>
+
+                        <label for="signupPassword">Password</label>
+                        <input id="signupPassword" type="password" placeholder="Create a password" minlength="6" required>
+
+                        <div class="auth-actions">
+                            <button type="submit" class="signup-btn" id="signupBtn">Sign Up</button>
+                        </div>
+                    </form>
+
+                    <p class="auth-note" id="authNote">Use your email or phone number to create your account.</p>
+                    <p class="switch-auth-line">Already have an account? <button type="button" class="text-link" id="gotoLoginLink">Login</button></p>
+
+                    <div class="logged-in-panel hidden" id="loggedInPanel">
+                        <p class="welcome-text" id="welcomeText"></p>
+                        <button type="button" class="logout-btn" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="page page-5">
+            <img src="assets/page4-auth-bg.jpeg" alt="Login" class="background-image">
+            <div class="page4-overlay"></div>
+            <div class="content-wrapper page4-wrapper">
+                <div class="page4-auth-card page5-auth-card">
+                    <h2>Login</h2>
+
+                    <form id="loginForm" class="auth-form" novalidate>
+                        <label for="loginIdentifier">Email or Phone Number</label>
+                        <input id="loginIdentifier" type="text" placeholder="Enter your email or phone number" required>
+
+                        <label for="loginPassword">Password</label>
+                        <input id="loginPassword" type="password" placeholder="Enter your password" required>
+
+                        <div class="auth-actions">
+                            <button type="submit" class="login-btn" id="loginSubmitBtn">Enter AgriTwin</button>
+                        </div>
+                    </form>
+
+                    <p class="auth-note" id="loginNote">Login with the same details you used in sign up.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="page page-6">
+            <img src="assets/page4-auth-bg.jpeg" alt="Page 6" class="background-image">
+            <div class="page4-overlay"></div>
+            <div class="content-wrapper page6-wrapper">
+                <div class="page6-card">
+                    <h2>Page 6 Ready</h2>
+                    <p>You are logged in. Share your Page 6 design and I will build it exactly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
